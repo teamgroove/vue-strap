@@ -35,6 +35,7 @@ if (!Array.prototype.find) {
  */
 /*global self, document, DOMException */
 /*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
+if (typeof global !== 'undefined') var self = global.self;
 if ("document" in self) {
   // Full polyfill for browsers with no classList support
   // Including IE < Edge missing SVGElement.classList
